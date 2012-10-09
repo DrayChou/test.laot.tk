@@ -1,0 +1,400 @@
+2012-09-17 16:10:52
+/oauth
+_POST:Array
+(
+)
+
+2012-09-17 16:10:52
+/oauth
+_GET:Array
+(
+    [q] => oauth
+)
+
+2012-09-17 16:10:52
+/oauth
+_COOKIE:Array
+(
+    [test_laot_tk_ss] => 10aad30f6bb03ec4dc961dd5b826a0ce
+)
+
+2012-09-17 16:10:52
+/oauth
+session_id:10aad30f6bb03ec4dc961dd5b826a0ce
+2012-09-17 16:10:52
+/oauth
+user_config:Array
+(
+    [user_id] => 
+    [screen_name] => 
+    [user_info] => Array
+        (
+        )
+
+    [oauths] => Array
+        (
+            [used] => base
+            [list] => Array
+                (
+                    [base] => Array
+                        (
+                            [name] => 大叔家无良的测试机
+                            [description] => 私人用品，严禁冒用，违者必究。
+                            [website] => https://dev.twitter.com/apps/new
+                            [key] => B2qv3jvJHh9LzbC1fuM7QA
+                            [secret] => vEnLo2DMgpkQGvGJMIz6datEoC4G4PqDIWxHAn4x30
+                            [oauth_token] => 
+                            [oauth_token_secret] => 
+                        )
+
+                )
+
+        )
+
+)
+
+2012-09-17 16:10:52
+/oauth
+oauth_id:base
+2012-09-17 16:10:52
+/oauth
+oauth:Array
+(
+    [name] => 大叔家无良的测试机
+    [description] => 私人用品，严禁冒用，违者必究。
+    [website] => https://dev.twitter.com/apps/new
+    [key] => B2qv3jvJHh9LzbC1fuM7QA
+    [secret] => vEnLo2DMgpkQGvGJMIz6datEoC4G4PqDIWxHAn4x30
+    [oauth_token] => 
+    [oauth_token_secret] => 
+)
+
+2012-09-17 16:10:53
+/oauth
+session_id:10aad30f6bb03ec4dc961dd5b826a0ce
+2012-09-17 16:10:53
+/oauth
+request_token:Array
+(
+    [oauth_token] => 18RzsGl219iO0ooW1mMZiy1na6FuHQ4ajPrCApt8
+    [oauth_token_secret] => KsdICQ8e2kalchvzswJnwP9j9yCBZ1BaZwCo2n958Q
+    [oauth_callback_confirmed] => true
+)
+
+2012-09-17 16:10:53
+/oauth
+session_id:10aad30f6bb03ec4dc961dd5b826a0ce
+2012-09-17 16:10:53
+/oauth
+_SESSION:Array
+(
+    [oauth_token] => 18RzsGl219iO0ooW1mMZiy1na6FuHQ4ajPrCApt8
+    [oauth_token_secret] => KsdICQ8e2kalchvzswJnwP9j9yCBZ1BaZwCo2n958Q
+)
+
+2012-09-17 16:10:53
+/oauth
+http_code:200
+2012-09-17 16:10:53
+/oauth
+url:https://twitter.com/oauth/authorize?oauth_token=18RzsGl219iO0ooW1mMZiy1na6FuHQ4ajPrCApt8
+2012-09-17 16:11:15
+/oauth
+_POST:Array
+(
+)
+
+2012-09-17 16:11:15
+/oauth
+_GET:Array
+(
+    [q] => oauth
+)
+
+2012-09-17 16:11:15
+/oauth
+_COOKIE:Array
+(
+    [test_laot_tk_ss] => 10aad30f6bb03ec4dc961dd5b826a0ce
+)
+
+2012-09-17 16:11:15
+/oauth
+session_id:10aad30f6bb03ec4dc961dd5b826a0ce
+2012-09-17 16:11:15
+/oauth
+user_config:Array
+(
+    [user_id] => 
+    [screen_name] => 
+    [user_info] => Array
+        (
+        )
+
+    [oauths] => Array
+        (
+            [used] => base
+            [list] => Array
+                (
+                    [base] => Array
+                        (
+                            [name] => 大叔家无良的测试机
+                            [description] => 私人用品，严禁冒用，违者必究。
+                            [website] => https://dev.twitter.com/apps/new
+                            [key] => B2qv3jvJHh9LzbC1fuM7QA
+                            [secret] => vEnLo2DMgpkQGvGJMIz6datEoC4G4PqDIWxHAn4x30
+                            [oauth_token] => 
+                            [oauth_token_secret] => 
+                        )
+
+                )
+
+        )
+
+)
+
+2012-09-17 16:11:15
+/oauth
+oauth_id:base
+2012-09-17 16:11:15
+/oauth
+oauth:Array
+(
+    [name] => 大叔家无良的测试机
+    [description] => 私人用品，严禁冒用，违者必究。
+    [website] => https://dev.twitter.com/apps/new
+    [key] => B2qv3jvJHh9LzbC1fuM7QA
+    [secret] => vEnLo2DMgpkQGvGJMIz6datEoC4G4PqDIWxHAn4x30
+    [oauth_token] => 
+    [oauth_token_secret] => 
+)
+
+2012-09-17 16:11:15
+/oauth
+session_id:10aad30f6bb03ec4dc961dd5b826a0ce
+2012-09-17 16:11:15
+/oauth
+request_token:Array
+(
+    [oauth_token] => ad2NiCwx1Ebxx9f5Ds2tjvRvVlGmo1bkuUiJuYLr8
+    [oauth_token_secret] => 0BArIbbZnQ08rxc3gSyPIMPvZrqU4k2079zHzQxg4
+    [oauth_callback_confirmed] => true
+)
+
+2012-09-17 16:11:15
+/oauth
+session_id:10aad30f6bb03ec4dc961dd5b826a0ce
+2012-09-17 16:11:15
+/oauth
+_SESSION:Array
+(
+    [oauth_token] => ad2NiCwx1Ebxx9f5Ds2tjvRvVlGmo1bkuUiJuYLr8
+    [oauth_token_secret] => 0BArIbbZnQ08rxc3gSyPIMPvZrqU4k2079zHzQxg4
+)
+
+2012-09-17 16:11:15
+/oauth
+http_code:200
+2012-09-17 16:11:15
+/oauth
+url:https://twitter.com/oauth/authorize?oauth_token=ad2NiCwx1Ebxx9f5Ds2tjvRvVlGmo1bkuUiJuYLr8
+2012-09-17 16:15:27
+/oauth
+_POST:Array
+(
+)
+
+2012-09-17 16:15:27
+/oauth
+_GET:Array
+(
+    [q] => oauth
+)
+
+2012-09-17 16:15:27
+/oauth
+_COOKIE:Array
+(
+    [test_laot_tk_ss] => 10aad30f6bb03ec4dc961dd5b826a0ce
+)
+
+2012-09-17 16:15:27
+/oauth
+session_id:10aad30f6bb03ec4dc961dd5b826a0ce
+2012-09-17 16:15:27
+/oauth
+user_config:Array
+(
+    [user_id] => 
+    [screen_name] => 
+    [user_info] => Array
+        (
+        )
+
+    [oauths] => Array
+        (
+            [used] => base
+            [list] => Array
+                (
+                    [base] => Array
+                        (
+                            [name] => 大叔家无良的测试机
+                            [description] => 私人用品，严禁冒用，违者必究。
+                            [website] => https://dev.twitter.com/apps/new
+                            [key] => B2qv3jvJHh9LzbC1fuM7QA
+                            [secret] => vEnLo2DMgpkQGvGJMIz6datEoC4G4PqDIWxHAn4x30
+                            [oauth_token] => 
+                            [oauth_token_secret] => 
+                        )
+
+                )
+
+        )
+
+)
+
+2012-09-17 16:15:27
+/oauth
+oauth_id:base
+2012-09-17 16:15:27
+/oauth
+oauth:Array
+(
+    [name] => 大叔家无良的测试机
+    [description] => 私人用品，严禁冒用，违者必究。
+    [website] => https://dev.twitter.com/apps/new
+    [key] => B2qv3jvJHh9LzbC1fuM7QA
+    [secret] => vEnLo2DMgpkQGvGJMIz6datEoC4G4PqDIWxHAn4x30
+    [oauth_token] => 
+    [oauth_token_secret] => 
+)
+
+2012-09-17 16:15:28
+/oauth
+session_id:10aad30f6bb03ec4dc961dd5b826a0ce
+2012-09-17 16:15:28
+/oauth
+request_token:Array
+(
+    [oauth_token] => BYvKbwqwpQczgjff9vdOy91xeAEAvdTWg8GQxGaw3LM
+    [oauth_token_secret] => MUT0G56EeBHChBi3wQPl4yHbMR7AVlpQUhAu6lN1Xe0
+    [oauth_callback_confirmed] => true
+)
+
+2012-09-17 16:15:28
+/oauth
+session_id:10aad30f6bb03ec4dc961dd5b826a0ce
+2012-09-17 16:15:28
+/oauth
+_SESSION:Array
+(
+    [oauth_token] => BYvKbwqwpQczgjff9vdOy91xeAEAvdTWg8GQxGaw3LM
+    [oauth_token_secret] => MUT0G56EeBHChBi3wQPl4yHbMR7AVlpQUhAu6lN1Xe0
+)
+
+2012-09-17 16:15:28
+/oauth
+http_code:200
+2012-09-17 16:15:28
+/oauth
+url:https://twitter.com/oauth/authorize?oauth_token=BYvKbwqwpQczgjff9vdOy91xeAEAvdTWg8GQxGaw3LM
+2012-09-17 16:15:50
+/oauth
+_POST:Array
+(
+)
+
+2012-09-17 16:15:50
+/oauth
+_GET:Array
+(
+    [q] => oauth
+)
+
+2012-09-17 16:15:50
+/oauth
+_COOKIE:Array
+(
+    [test_laot_tk_ss] => 10aad30f6bb03ec4dc961dd5b826a0ce
+)
+
+2012-09-17 16:15:50
+/oauth
+session_id:10aad30f6bb03ec4dc961dd5b826a0ce
+2012-09-17 16:15:50
+/oauth
+user_config:Array
+(
+    [user_id] => 
+    [screen_name] => 
+    [user_info] => Array
+        (
+        )
+
+    [oauths] => Array
+        (
+            [used] => base
+            [list] => Array
+                (
+                    [base] => Array
+                        (
+                            [name] => 大叔家无良的测试机
+                            [description] => 私人用品，严禁冒用，违者必究。
+                            [website] => https://dev.twitter.com/apps/new
+                            [key] => B2qv3jvJHh9LzbC1fuM7QA
+                            [secret] => vEnLo2DMgpkQGvGJMIz6datEoC4G4PqDIWxHAn4x30
+                            [oauth_token] => 
+                            [oauth_token_secret] => 
+                        )
+
+                )
+
+        )
+
+)
+
+2012-09-17 16:15:50
+/oauth
+oauth_id:base
+2012-09-17 16:15:50
+/oauth
+oauth:Array
+(
+    [name] => 大叔家无良的测试机
+    [description] => 私人用品，严禁冒用，违者必究。
+    [website] => https://dev.twitter.com/apps/new
+    [key] => B2qv3jvJHh9LzbC1fuM7QA
+    [secret] => vEnLo2DMgpkQGvGJMIz6datEoC4G4PqDIWxHAn4x30
+    [oauth_token] => 
+    [oauth_token_secret] => 
+)
+
+2012-09-17 16:15:50
+/oauth
+session_id:10aad30f6bb03ec4dc961dd5b826a0ce
+2012-09-17 16:15:50
+/oauth
+request_token:Array
+(
+    [oauth_token] => hPnIT0uKNBXJ4TepOs3L9wdlqL4crylQSWhTXeY
+    [oauth_token_secret] => fDbZ51hCyz8hJkXZKNs8GBq5Ri89x0GxhJV2mRtcL0
+    [oauth_callback_confirmed] => true
+)
+
+2012-09-17 16:15:50
+/oauth
+session_id:10aad30f6bb03ec4dc961dd5b826a0ce
+2012-09-17 16:15:50
+/oauth
+_SESSION:Array
+(
+    [oauth_token] => hPnIT0uKNBXJ4TepOs3L9wdlqL4crylQSWhTXeY
+    [oauth_token_secret] => fDbZ51hCyz8hJkXZKNs8GBq5Ri89x0GxhJV2mRtcL0
+)
+
+2012-09-17 16:15:50
+/oauth
+http_code:200
+2012-09-17 16:15:50
+/oauth
+url:https://twitter.com/oauth/authorize?oauth_token=hPnIT0uKNBXJ4TepOs3L9wdlqL4crylQSWhTXeY

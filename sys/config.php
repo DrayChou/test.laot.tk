@@ -1,0 +1,42 @@
+<?php
+return array(
+    //验证规则
+   'edit_check' => array(
+        array(
+            'new_id',
+            '/^[A-Za-z0-9]+$/',
+            'error',
+            '字母+数字'
+        ),
+        array(
+            'new_name',
+            '/^.+$/',
+            'warning',
+            '名称'
+        ),
+        array(
+            'new_description',
+            '/^.+$/',
+            'warning',
+            '介绍'
+        ),
+        array(
+            'new_website',
+            '/^.+$/',
+            'warning',
+            '跳转到的站点'
+        ),
+        array(
+            'new_key',
+            '/^[A-Za-z0-9]+$/',
+            'error',
+            '字母+数字'
+        ),
+        array(
+            'new_secret',
+            '/^[A-Za-z0-9]+$/',
+            'error',
+            '字母+数字'
+        )
+    ),
+);

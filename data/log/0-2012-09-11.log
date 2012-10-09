@@ -1,0 +1,100 @@
+2012-09-11 15:25:49
+/oauth
+_POST:Array
+(
+)
+
+2012-09-11 15:25:49
+/oauth
+_GET:Array
+(
+    [q] => oauth
+)
+
+2012-09-11 15:25:49
+/oauth
+_COOKIE:Array
+(
+    [test_laot_tk_ss] => ff6b73e31803b3b39815637f818d6418
+)
+
+2012-09-11 15:25:49
+/oauth
+session_id:ff6b73e31803b3b39815637f818d6418
+2012-09-11 15:25:49
+/oauth
+user_config:Array
+(
+    [user_id] => 
+    [screen_name] => 
+    [user_info] => Array
+        (
+        )
+
+    [oauths] => Array
+        (
+            [used] => base
+            [list] => Array
+                (
+                    [base] => Array
+                        (
+                            [name] => 大叔家无良的测试机
+                            [description] => 私人用品，严禁冒用，违者必究。
+                            [website] => https://dev.twitter.com/apps/new
+                            [key] => B2qv3jvJHh9LzbC1fuM7QA
+                            [secret] => vEnLo2DMgpkQGvGJMIz6datEoC4G4PqDIWxHAn4x30
+                            [oauth_token] => 
+                            [oauth_token_secret] => 
+                        )
+
+                )
+
+        )
+
+)
+
+2012-09-11 15:25:49
+/oauth
+oauth_id:base
+2012-09-11 15:25:49
+/oauth
+oauth:Array
+(
+    [name] => 大叔家无良的测试机
+    [description] => 私人用品，严禁冒用，违者必究。
+    [website] => https://dev.twitter.com/apps/new
+    [key] => B2qv3jvJHh9LzbC1fuM7QA
+    [secret] => vEnLo2DMgpkQGvGJMIz6datEoC4G4PqDIWxHAn4x30
+    [oauth_token] => 
+    [oauth_token_secret] => 
+)
+
+2012-09-11 15:25:49
+/oauth
+session_id:ff6b73e31803b3b39815637f818d6418
+2012-09-11 15:25:49
+/oauth
+request_token:Array
+(
+    [oauth_token] => QxiYZhL3wJL1yluKAit9KQvDthgazJB23M2i6FYv5c
+    [oauth_token_secret] => Zt6pyoXC4SL1e0epuX63MLD9UnHKac5zZ3OPzKPko
+    [oauth_callback_confirmed] => true
+)
+
+2012-09-11 15:25:49
+/oauth
+session_id:ff6b73e31803b3b39815637f818d6418
+2012-09-11 15:25:49
+/oauth
+_SESSION:Array
+(
+    [oauth_token] => QxiYZhL3wJL1yluKAit9KQvDthgazJB23M2i6FYv5c
+    [oauth_token_secret] => Zt6pyoXC4SL1e0epuX63MLD9UnHKac5zZ3OPzKPko
+)
+
+2012-09-11 15:25:49
+/oauth
+http_code:200
+2012-09-11 15:25:49
+/oauth
+url:https://twitter.com/oauth/authorize?oauth_token=QxiYZhL3wJL1yluKAit9KQvDthgazJB23M2i6FYv5c
