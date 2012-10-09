@@ -2,6 +2,10 @@
 ## Eclipse
 #################
 
+# user data
+data/users
+data/log
+
 *.pydevproject
 .project
 .metadata
