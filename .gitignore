@@ -5,6 +5,7 @@
 # user data
 data/users
 data/log
+sftp-config.json
 
 *.pydevproject
 .project
