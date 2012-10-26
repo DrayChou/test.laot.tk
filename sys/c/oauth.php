@@ -9,26 +9,43 @@ class oauth{
         write_log(0,'_COOKIE:'.print_r($_COOKIE,true));
         write_log(0,'session_id:'.print_r(session_id(),true));
 
-        $user_config = load_config();
+        $user_id = isset($_SESSION['user_id'])?$_SESSION['user_id']:'';
+        $screen_name = isset($_SESSION['user_id'])?$_SESSION['screen_name']:'';
+        $user_config = load_config($user_id);
         write_log(0,'user_config:'.print_r($user_config,true));
         $oauth_id = isset($_GET['oi'])?$_GET['oi']:'base';
         write_log(0,'oauth_id:'.print_r($oauth_id,true));
         if(!isset($user_config['oauths']['list'][$oauth_id])){
-            die('错误的授权ID:'.$oauth_id);
+            echo "<pre>";
+            echo print_r($user_config,true);
+            echo "</pre>";
+            show_error('出错了','错误的授权ID:'.$oauth_id);
         }
+
         $oauth = $user_config['oauths']['list'][$oauth_id];
         write_log(0,'oauth:'.print_r($oauth,true));
 
-        if(isset($_SESSION['user_id']) && isset($_GET['os'])){
-            $user_config['oauths']['used'] = $oauth_id;
-            if(save_config($user_config)){
+        if(isset($_GET['os'])){
+            if(!empty($screen_name) && isset($_GET['oi'])){
+                if(empty($user_config['oauths']['list'][$oauth_id]['oauth_token'])){
+                    $info = "请先授权该API.";
+                }else{
+                    $user_config['oauths']['used'] = $oauth_id;
+                    if(save_config($user_config)){
+                        $_SESSION['oauths']['used'] = $oauth_id;
+                        $info = "API {$oauth_id} 状态设置成功.";
+                    }else{
+                        $info = "保存信息失败.";
+                    }
+                }
+
                 echo "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />";
                 echo "<script Language=Javascript>";
-                echo "  alert(\"设置成功\");";
-                echo " window.location='" . $url . "';";
+                echo "  alert(\"{$info}\");";
+                echo " window.location='" . BASE_URL . "api';";
                 echo "</script>";
             }else{
-                echo "保存信息失败.";
+                show_error('出错了','请先登录');
             }
         }else{
             if(isset($_GET['oauth_token']) && isset($_GET['oauth_verifier'])){
@@ -42,30 +59,30 @@ class oauth{
                 if($connection->http_code == 200){
                     $user_id = $access_token['user_id'];
                     $screen_name = $access_token['screen_name'];
-                    $user_config = array_merge($user_config,load_config($screen_name,$user_id));
+                    $user_config = array_merge($user_config,load_config($user_id));
                     $user_config['user_id'] = $user_id;
                     $user_config['screen_name'] = $screen_name;
                     $user_config['oauths']['list'][$oauth_id]['oauth_token'] = $access_token['oauth_token'];
                     $user_config['oauths']['list'][$oauth_id]['oauth_token_secret'] = $access_token['oauth_token_secret'];
                     $user_config['user_info'] = $connection->get('account/verify_credentials');
 
-                    if(isset($_GET['os']) || count($user_config['oauths']['list']) == 1){
-                        $user_config['oauths']['used'] = $oauth_id;
-                    }
-
                     $twitter_str = 'return '.var_export($user_config,true).';';
                     write_log(0,'twitter_str:'.print_r($twitter_str,true));
 
                     if(save_config($user_config)){
-                        echo "<pre>";
-                        echo print_r($user_config,true);
-                        echo "</pre>";
+                        // echo "<pre>";
+                        // echo print_r($user_config,true);
+                        // echo "</pre>";
 
                         $_SESSION = array_merge($_SESSION,$user_config);
                         unset($_SESSION['oauth_token']);
                         unset($_SESSION['oauth_token_secret']);
 
-                        header('Location: '.BASE_URL);
+                        echo "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />";
+                        echo "<script Language=Javascript>";
+                        echo "  alert(\"授权成功\");";
+                        echo " window.location='" . BASE_URL . "api';";
+                        echo "</script>";
                     }else{
                         echo "保存登陆信息失败.";
                     }
@@ -79,6 +96,10 @@ class oauth{
 
                 write_log(0,'session_id:'.print_r(session_id(),true));
                 write_log(0,'request_token:'.print_r($request_token,true));
+
+                if(!isset($request_token['oauth_token']) || !$request_token['oauth_token_secret']){
+                    show_error('出错了','错误的API参数');
+                }
 
                 /* Save request token to session */
                 $_SESSION['oauth_token'] = $request_token['oauth_token'];

@@ -1,17 +1,17 @@
 <?php
 
 //读取用户设置
-function load_config($screen_name = '', $user_id = 0) {
-    if(empty($screen_name)){
+function load_config($user_id = 0) {
+    if(empty($user_id)){
         if(file_exists(DATA_PATH.'_base.php')){
             return require(DATA_PATH.'_base.php');
         }
     }else{
-        if(file_exists(DATA_PATH.'users/'.$screen_name.'_'.$user_id.'.php')){
-            return require(DATA_PATH.'users/'.$screen_name.'_'.$user_id.'.php');
+        if(file_exists(DATA_PATH.'users/'.$user_id.'.php')){
+            return require(DATA_PATH.'users/'.$user_id.'.php');
         }
 
-        $old_tokens = glob(DATA_PATH.'users/'.$screen_name.'_*'.'.php');
+        $old_tokens = glob(DATA_PATH.'users/'.$user_id.'_*'.'.php');
         if(!empty($old_tokens)){
             foreach($old_tokens as $file){
                 return require($file);
@@ -25,8 +25,8 @@ function load_config($screen_name = '', $user_id = 0) {
 function save_config($user_config) {
     if(!empty($user_config)){
         $config_str = "<?php\nreturn ".var_export($user_config,true).';';
-        if( ($user_id = $user_config['user_id']) && ($screen_name = $user_config['screen_name'])){
-            return file_put_contents(DATA_PATH.'users/'.$screen_name.'_'.$user_id.'.php', $config_str);
+        if( $user_id = $user_config['user_id'] ){
+            return file_put_contents(DATA_PATH.'users/'.$user_id.'.php', $config_str);
         }
     }
 
@@ -75,5 +75,8 @@ function show_error($title='404', $info='We could not find the link/file you wer
     );
 
     header("HTTP/1.1 404 Not Found");
+    view('header');
     view('404',$parm);
+    view('footer');
+    exit();
 }
